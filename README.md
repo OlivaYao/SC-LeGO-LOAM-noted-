@@ -1,15 +1,6 @@
-# SC-LeGO-LOAM
-## NEWS (Nov, 2020)
-- A Scan Context integration for LIO-SAM, named [SC-LIO-SAM (link)](https://github.com/gisbi-kim/SC-LIO-SAM), is also released. 
-
-## Real-time LiDAR SLAM: Scan Context (18 IROS) + LeGO-LOAM (18 IROS)
-- This repository is an example use-case of <a href="https://github.com/irapkaist/scancontext/tree/master/cpp"> Scan Context C++ </a>, the LiDAR place recognition method, for LiDAR SLAM applications.  
-- For more details for each algorithm please refer to <br>
-  Scan Context https://github.com/irapkaist/scancontext <br>
-  LeGO LOAM https://github.com/facontidavide/LeGO-LOAM-BOR <br>
-- Just include `Scancontext.h`. For details see the file `mapOptmization.cpp`. 
-- This example is integrated with LOAM, but our simple module (i.e., `Scancontext.h`) can be easily integrated with any other key-frame-based odometry (e.g., wheel odometry or ICP-based odometry).
-- Current version: April, 2020.  
+# SC-LeGO-LOAM (noted)
+## NEWS 
+-（2026.3.17） 第一次学习scan context代码，为Scancontext.cpp加了注释。
 
 
 ## Features 
@@ -17,16 +8,6 @@
     - Our module has KDtree and we used <a href="https://github.com/jlblancoc/nanoflann"> nanoflann</a>. nanoflann is an also single-header-program and that file is in our directory.
 - Easy to use: A user just remembers and uses only two API functions; `makeAndSaveScancontextAndKeys` and `detectLoopClosureID`.
 - Fast: The loop detector runs at 10-15Hz (for 20 x 60 size, 10 candidates)
-
-
-## Examples
-- <a href="https://youtu.be/MtQ8-PiBK3E?t=194"> Video 1: DCC (MulRan dataset)</a>
-- <a href="https://youtu.be/p-NsVs8GATA?t=436"> Video 2: Riverside (MulRan dataset) </a>
-- <a href="https://youtu.be/bEqCehMJ_Hk"> Video 3: KAIST (MulRan dataset) </a>
-
-
-<p align="center"><img src="results/mulran_merged.png" width=900></p>
-<p align="center"><img src="results/pangyo_merged.png" width=900></p>
 
 
 ## Scan Context integration
@@ -43,7 +24,7 @@
 - For example, 
     ```
     cd ~/catkin_ws/src
-    git clone https://github.com/irapkaist/SC-LeGO-LOAM.git
+    git clone https://github.com/OlivaYao/SC-LeGO-LOAM-noted-.git
     cd ..
     catkin_make
     source devel/setup.bash
@@ -57,35 +38,3 @@
 ## Dependencies
 - All dependencies are same as LeGO-LOAM (i.e., ROS, PCL, and GTSAM).
 - We used C++14 to use std::make_unique in Scancontext.cpp but you can use C++11 with slightly modifying only that part.
-
-## Cite SC-LeGO-LOAM
-```
-@INPROCEEDINGS { gkim-2018-iros,
-  author = {Kim, Giseop and Kim, Ayoung},
-  title = { Scan Context: Egocentric Spatial Descriptor for Place Recognition within {3D} Point Cloud Map },
-  booktitle = { Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems },
-  year = { 2018 },
-  month = { Oct. },
-  address = { Madrid }
-}
-```
-and 
-```
-@inproceedings{legoloam2018,
-  title={LeGO-LOAM: Lightweight and Ground-Optimized Lidar Odometry and Mapping on Variable Terrain},
-  author={Shan, Tixiao and Englot, Brendan},
-  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages={4758-4765},
-  year={2018},
-  organization={IEEE}
-}
-```
-
-## Contact 
-- Maintainer: Giseop Kim (`paulgkim@kaist.ac.kr`)
-
-## Misc notes
-- You may also be interested in this (from the other author's) implementation :) 
-  - ICRA20, ISCLOAM: Intensity Scan Context + LOAM, https://github.com/wh200720041/iscloam
-  - Also light-weight and practical LiDAR SLAM codes! 
-
