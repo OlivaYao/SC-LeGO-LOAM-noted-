@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/yyb/Lidar_ws/sc_lego_loam_ws/devel/lib/python3/dist-packages",
+        "/home/yyb/Lidar_ws/Simple_LIO_ws/src/ws_livox/devel/lib/python3/dist-packages",
+        "/home/yyb/Lidar_ws/S_FAST_LIO_ws/src/ws_livox/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/yyb/Lidar_ws/sc_lego_loam_ws/devel/lib/python3/dist-packages",
+        "/home/yyb/Lidar_ws/Simple_LIO_ws/src/ws_livox/devel/lib/python3/dist-packages",
+        "/home/yyb/Lidar_ws/S_FAST_LIO_ws/src/ws_livox/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

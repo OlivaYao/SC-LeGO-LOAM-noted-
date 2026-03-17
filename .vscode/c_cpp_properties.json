@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/yyb/Lidar_ws/sc_lego_loam_ws/devel/include/**",
+        "/home/yyb/Lidar_ws/Simple_LIO_ws/src/ws_livox/devel/include/**",
+        "/home/yyb/Lidar_ws/S_FAST_LIO_ws/src/ws_livox/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/yyb/Lidar_ws/sc_lego_loam_ws/src/SC-LeGO-LOAM/SC-LeGO-LOAM/LeGO-LOAM/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
